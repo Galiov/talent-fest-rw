@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./components/Login";
+import Employee from "./components/Employee";
+import Coach from "./components/Coach";
+import TechLead from "./components/TechLead";
+import HR from "./components/HR";
+import NoMatch from "./components/NoMatch";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <Route exact path="/employee" component={Employee} />
+          <Route exact path="/coach" component={Coach} />
+          <Route exact path="/tl" component={TechLead} />
+          <Route exact path="/hr" component={HR} />
+          <Route component={NoMatch} />
+        </Switch>
+      </Router>
     </div>
   );
 }
