@@ -4,6 +4,7 @@ class Navbar extends Component {
 	render() {
 		return (
 			<div>
+        <p>RULESWARE</p>
 			</div>
 		);
 	}
