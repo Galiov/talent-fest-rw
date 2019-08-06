@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import db from '../initializers/firebase';
 import firebase from "firebase";
 import "./components-styles/Employee-form.css";
+import Confirm from './Confirm';
+import Request from './Request';
+ 
 
 class EmployeeForm extends Component {
     constructor(props) {
@@ -10,6 +13,7 @@ class EmployeeForm extends Component {
         this.state = {date: '', mentor:'', place:"", rol:"", version:"", coments:"", userID:"", userName:"" }
         this.subirFirebase = this.subirFirebase.bind(this);
         this.getUser=this.getUser.bind(this);
+        
 
         this.state = {
           data: ""
@@ -71,14 +75,16 @@ class EmployeeForm extends Component {
     
     render() {
         return (
-        <div>
+        <div class="container col-md-12">
+        <div className="row">
           {/* <pre>{ JSON.stringify(this.state, null, 2)}</pre> */}
           <form>
+            <div className="col-md-6">
               <label htmlFor="date"> Fecha deseada: </label>
               <input name="date" type="text" placeholder="Ingresa la fecha"
               onChange={event => this.valueToState(event.target)}/>
                
-               <label htmlFor="mentor"> Mentor </label>
+               <label htmlFor="mentor"> </label>
               <input name="mentor" type="text" placeholder="Ingresa tu mentor"
               onChange={event => this.valueToState(event.target)}/>
               <label>
@@ -90,6 +96,8 @@ class EmployeeForm extends Component {
                   <option value="iteso">Iteso</option>
                   </select>
               </label>
+              </div>
+              <div className="col-md-6">
               <legend>Rol:</legend>
               <label>
                   Coach
@@ -121,18 +129,25 @@ class EmployeeForm extends Component {
               </select>
               <label htmlFor="coments"></label>
               <textarea name="coments" placeholder="Coments, notas" onChange={event => this.valueToState(event.target)}/>
-              <button onClick={this.subirFirebase}>Subir formulario</button>
+              <Confirm />
+              </div>
           </form>
             <div>
-              <p>{this.state.data.userName} ({this.state.data.rol}) pide tal certificación {this.state.data.version} llevada a cabo en {this.state.data.place} la fecha del {this.state.data.date}.</p>
-              <p>Mentor: {this.state.data.mentor}.</p>
-              <p>Comentarios: {this.state.data.coments}</p>
-
-               {/* ul
-                                   this.state.requests.map(()=>)*/}
+            </div>  
+              {/*<Request
+              <button onClick={this.subirFirebase} >Subir formulario</button> 
+                               userName={this.state.data.userName}
+                               rol={this.state.data.rol}
+                               version={this.state.data.version}
+                               place={this.state.data.place}
+                               date={this.state.data.date}
+                               mentor={this.state.data.mentor}
+                               coments={this.state.data.coments}
+                            />*/}
             </div>
         </div>
         );
     }
 }
 export default EmployeeForm;
+
