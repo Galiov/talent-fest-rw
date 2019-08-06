@@ -33,11 +33,15 @@ class Logout extends Component {
     });
   }
 
-  logOut() {
+  logOut(e) {
+    e.preventDefault ();
     firebase
       .auth()
       .signOut()
-      .then(console.log);
+      .then(result => { 
+        window.location.assign('/');
+        console.log(result);
+      });
   }
 
   render() {

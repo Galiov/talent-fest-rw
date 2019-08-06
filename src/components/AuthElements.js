@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import "./components-styles/AuthElements.css";
 
 const AuthElements = (props) => {
@@ -6,9 +7,9 @@ const AuthElements = (props) => {
     if (props.userLoggedIn)
       return (
    <div className = "user">
-        <img width="35" height="35" src={props.photoURL} alt="avatar" />
         <p>{props.name}</p>
-        <button className="button" onClick={props.logOut}>Sign Out</button>
+        <img className="avatar" src={props.photoURL} alt="avatar" />
+        <button className="button" onClick={props.logOut}><Link to="/"/>Sign Out</button>
    </div>  
       );
     }

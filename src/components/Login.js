@@ -17,7 +17,8 @@ class Login extends Component {
     firebase
       .auth()
       .signInWithPopup(provider)
-      .then(result => {
+      .then(result => { 
+        window.location.assign('/Employee');
         console.log(result);
       });
   }
