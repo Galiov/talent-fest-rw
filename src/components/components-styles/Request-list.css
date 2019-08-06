@@ -1,0 +1,13 @@
+.list-down {
+	padding: 2em;
+	margin-top: 4%;
+	width: 60%;
+}
+
+ul.list-group {
+}
+
+a.active.list-group-item-action.list-group-item {
+	background-color: #b32017;
+	border-color: #b320 !important;
+}

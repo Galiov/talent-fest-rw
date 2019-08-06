@@ -3,6 +3,5 @@ form {
 }
 
 form:nth-child(1) {
-  padding: 5em 2em; 
-  margin-top: 3em;
+  padding: 4em 2em; 
 }
