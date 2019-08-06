@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import db from '../initializers/firebase';
 import firebase from "firebase";
+import "./components-styles/Employee-form.css";
 
 class EmployeeForm extends Component {
     constructor(props) {
