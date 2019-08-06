@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/talent-fest-rw/static/css/main.2cce8147.chunk.css",
-    "main.js": "/talent-fest-rw/static/js/main.85191f37.chunk.js",
-    "main.js.map": "/talent-fest-rw/static/js/main.85191f37.chunk.js.map",
+    "main.css": "/talent-fest-rw/static/css/main.e2dc581e.chunk.css",
+    "main.js": "/talent-fest-rw/static/js/main.9d9a0fe1.chunk.js",
+    "main.js.map": "/talent-fest-rw/static/js/main.9d9a0fe1.chunk.js.map",
     "runtime~main.js": "/talent-fest-rw/static/js/runtime~main.3a39881b.js",
     "runtime~main.js.map": "/talent-fest-rw/static/js/runtime~main.3a39881b.js.map",
-    "static/js/2.3310f33a.chunk.js": "/talent-fest-rw/static/js/2.3310f33a.chunk.js",
-    "static/js/2.3310f33a.chunk.js.map": "/talent-fest-rw/static/js/2.3310f33a.chunk.js.map",
+    "static/css/2.266e55a5.chunk.css": "/talent-fest-rw/static/css/2.266e55a5.chunk.css",
+    "static/js/2.1d63cc13.chunk.js": "/talent-fest-rw/static/js/2.1d63cc13.chunk.js",
+    "static/js/2.1d63cc13.chunk.js.map": "/talent-fest-rw/static/js/2.1d63cc13.chunk.js.map",
     "index.html": "/talent-fest-rw/index.html",
-    "precache-manifest.9682f209170f709497f28c9693cfec31.js": "/talent-fest-rw/precache-manifest.9682f209170f709497f28c9693cfec31.js",
+    "precache-manifest.efedc8a4d0f256cf7ab398a4bee6f144.js": "/talent-fest-rw/precache-manifest.efedc8a4d0f256cf7ab398a4bee6f144.js",
     "service-worker.js": "/talent-fest-rw/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/talent-fest-rw/static/css/main.2cce8147.chunk.css.map"
+    "static/css/2.266e55a5.chunk.css.map": "/talent-fest-rw/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.e2dc581e.chunk.css.map": "/talent-fest-rw/static/css/main.e2dc581e.chunk.css.map",
+    "static/media/ruleswareblack.png": "/talent-fest-rw/static/media/ruleswareblack.c3d6769b.png",
+    "static/media/ruleswarewhite.png": "/talent-fest-rw/static/media/ruleswarewhite.87115850.png"
   }
 }
