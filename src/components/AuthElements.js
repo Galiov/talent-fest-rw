@@ -9,7 +9,7 @@ const AuthElements = (props) => {
    <div className = "user">
         <p>{props.name}</p>
         <img className="avatar" src={props.photoURL} alt="avatar" />
-        <button className="button" onClick={props.logOut}><Link to="/"/>Sign Out</button>
+        <button className="log-out-btn" onClick={props.logOut}><Link to="/"/>Sign Out</button>
    </div>  
       );
     }
