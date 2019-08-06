@@ -7,14 +7,16 @@
 .avatar {
 	width: 35px;
 	height: 35px;
-	margin-right: 1px;
+	margin-right: 50px;
 	margin-top: 6px;
 	margin-left: 15px;
 }
 
 .log-out-btn {
+	margin-right: 15px;
 	margin-bottom: 0px;
 	background-color: transparent;
+	border-style: none;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 14px;

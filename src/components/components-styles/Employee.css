@@ -5,5 +5,10 @@
 }
 
 .container > p {
-  padding: 5em;
+  font-size: 1.1rem;
+  padding: 5em 4em;
+}
+
+a {
+	color: #b32017;
 }

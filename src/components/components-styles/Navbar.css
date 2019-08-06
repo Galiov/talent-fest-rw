@@ -1,12 +1,17 @@
-.Navbar{
-  background-color: #8e8e8e;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+.Navbar {
+	background-color: #8e8e8e;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.logo{
-  margin: 0;
-  height: 5em;
+.logo {
+	margin: 0;
+	height: 5em;
+}
+
+.line {
+	background-color: #b32017;
+	height: 0.3em;
 }
