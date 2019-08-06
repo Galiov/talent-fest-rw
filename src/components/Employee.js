@@ -8,6 +8,8 @@ class Employee extends Component {
     return (
       <div>
         <Navbar />
+      <div className="big-container">
+        <div className="img-div"></div>
         <div className="container">
           <p>
             Verify the location and date of your certification{" "}
@@ -19,6 +21,7 @@ class Employee extends Component {
           </p>
           <EmployeeForm />
         </div>
+      </div>
       </div>
     );
   }

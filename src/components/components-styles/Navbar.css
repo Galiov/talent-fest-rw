@@ -1,4 +1,4 @@
-.Navbar {
+nav.navbar {
 	background-color: #8e8e8e;
 	display: flex;
 	flex-direction: row;
@@ -9,6 +9,10 @@
 .logo {
 	margin: 0;
 	height: 5em;
+}
+
+.log-out-btn {
+	border-style: none !important;
 }
 
 .line {
