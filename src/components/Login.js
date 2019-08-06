@@ -1,16 +1,7 @@
 import React, { Component } from "react";
 import firebase from "../initializers/firebase";
+import AuthElements from './AuthElements';
 import styled from 'styled-components';
-
-const Styles = styled.div`
-
-.avatar{
-  display: flex;
-  flex-direction: row;
-
-}
-
-`
 
 class Login extends Component {
   constructor(props) {
@@ -66,35 +57,20 @@ class Login extends Component {
       .then(console.log);
   }
 
-  logInButton() {
-    if (this.state.userLoggedIn)
-      return [
-   <Styles>
-   <div className = "avatar">
-        <p>{this.state.name}</p>,
-        <img width="32" src={this.state.photoURL} alt="avatar" />,
-        <button className="button" onClick={this.logOut}>Sign Out</button>
-   </div>
-   </Styles>     
-      ];
-
-    return <button onClick={this.login}>Iiniciar sesión con Google</button>;
-   
-  }
-
   render() {
-    return <div>{this.logInButton()}</div>;
-
+    return (
+      <div>
+        <AuthElements
+          login={this.login}
+          logOut={this.logOut}
+          userLoggedIn={this.state.userLoggedIn}
+          token={this.props.token}
+          name={this.state.name}
+          photoURL={this.state.photoURL}
+        />
+      </div>
+      );
   }
 }
 
 export default Login;
-
-{
-  /*export default withStyles({
-  container:{
-    display: 'flex',
-    flexDirection: ''
-  }
-}) (Login);*/
-}
