@@ -1,0 +1,12 @@
+.Navbar{
+  background-color: #8e8e8e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  margin: 0;
+  width: 10em;
+}

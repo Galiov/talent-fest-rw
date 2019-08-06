@@ -1,36 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Styles = styled.div`
-
-.avatar{
-  display: flex;
-  flex-direction: row;
-}
-
-
-`
+import "./components-styles/AuthElements.css";
 
 const AuthElements = (props) => {
 	  const logInButton = () => {
     if (props.userLoggedIn)
       return (
-  <Styles>
-   <div className = "avatar">
-        <p>{props.name}</p>,
-        <img width="32" src={props.photoURL} alt="avatar" />,
+   <div className = "user">
+        <img width="35" height="35" src={props.photoURL} alt="avatar" />
+        <p>{props.name}</p>
         <button className="button" onClick={props.logOut}>Sign Out</button>
-   </div> 
-   </Styles>   
-      );
-  
-    return (
-      <button className="inicio" onClick={props.login}>Iiniciar sesión con Google</button>
+   </div>  
       );
     }
 
     return (
-      <div>
+      <div >
         {logInButton()}
       </div>);
 

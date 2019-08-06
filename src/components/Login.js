@@ -1,38 +1,13 @@
 import React, { Component } from "react";
 import firebase from "../initializers/firebase";
-import AuthElements from './AuthElements';
-import styled from 'styled-components';
+import "./components-styles/Login.css";
+import logo from "../assets/ruleswareblack.png";
 
 class Login extends Component {
   constructor(props) {
     super(props);
 
     this.login = this.login.bind(this);
-    this.logOut = this.logOut.bind(this);
-
-    this.state = {
-      userLoggedIn: false,
-      photoURL: "",
-      name: ""
-    };
-  }
-
-  componentDidMount() {
-    firebase.auth().onAuthStateChanged(user => {
-      if (user) {
-        this.setState({
-          userLoggedIn: true,
-          photoURL: user.providerData[0].photoURL,
-          name: user.providerData[0].displayName
-        })
-      } else {
-        this.setState({
-          userLoggedIn: false,
-          photoURL: "",
-          name: ""
-        });
-      }
-    });
   }
 
   login() {
@@ -43,33 +18,21 @@ class Login extends Component {
       .auth()
       .signInWithPopup(provider)
       .then(result => {
-        let token = result.credential.accessToken;
-      })
-      .catch(err => {
-        console.log(err);
+        console.log(result);
       });
-  }
-
-  logOut() {
-    firebase
-      .auth()
-      .signOut()
-      .then(console.log);
   }
 
   render() {
     return (
-      <div>
-        <AuthElements
-          login={this.login}
-          logOut={this.logOut}
-          userLoggedIn={this.state.userLoggedIn}
-          token={this.props.token}
-          name={this.state.name}
-          photoURL={this.state.photoURL}
-        />
+      <div className="Login-display">
+        <div className="Login">
+          <img className="Logo" src={logo} alt="logo" />
+          <button className="button" onClick={this.login}>
+            Inciar sesión con Google
+          </button>
+        </div>
       </div>
-      );
+    );
   }
 }
 
