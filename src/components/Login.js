@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import firebase from "../initializers/firebase";
 import "./components-styles/Login.css";
 import logo from "../assets/ruleswareblack.png";
+import { GoogleLoginButton } from "react-social-login-buttons";
 
 class Login extends Component {
   constructor(props) {
@@ -28,9 +29,7 @@ class Login extends Component {
       <div className="Login-display">
         <div className="Login">
           <img className="Logo" src={logo} alt="logo" />
-          <button className="button" onClick={this.login}>
-            Inciar sesión con Google
-          </button>
+          <GoogleLoginButton className='button' onClick={this.login}></GoogleLoginButton>
         </div>
       </div>
     );

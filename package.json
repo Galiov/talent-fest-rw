@@ -13,6 +13,7 @@
     "react-icons": "^3.7.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "react-social-login-buttons": "^3.0.0",
     "react-with-firebase-auth": "^1.0.3",
     "save": "^2.4.0",
     "styled-components": "^4.3.2"
