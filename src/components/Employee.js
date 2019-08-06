@@ -1,14 +1,24 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
 import EmployeeForm from "./Employee-form";
+import "./components-styles/Employee.css";
 
 class Employee extends Component {
   render() {
     return (
       <div>
         <Navbar />
-        <EmployeeForm />
-        <p>This is the Employee view</p>
+        <div className="container">
+          <p>
+            Verify the location and date of your certification{" "}
+            <span>
+              <a href="https://wsr.pearsonvue.com/testtaker/signin/SignInPage/PEGASYSTEMS?locale=en_US">
+                here
+              </a>
+            </span> and complete the next form.
+          </p>
+          <EmployeeForm />
+        </div>
       </div>
     );
   }

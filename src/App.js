@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./components/Login";
 import Employee from "./components/Employee";
 import Coach from "./components/Coach";
@@ -18,6 +18,7 @@ function App() {
           <Route exact path="/coach" component={Coach} />
           <Route exact path="/tl" component={TechLead} />
           <Route exact path="/hr" component={HR} />
+
           <Route component={NoMatch} />
         </Switch>
       </Router>

@@ -1,0 +1,33 @@
+.Login-display {
+  margin: 0;
+  height: 100vh;
+  background-image: url(https://miro.medium.com/max/2625/1*eG2MFl0sGRKFmd_USgA_8Q.jpeg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login {
+  background-color: #ffffff;
+  text-align: center;
+  height: 30em;
+  width: 25em;
+  box-shadow: rgba(0, 0, 0, 0.49) 5px 5px 10px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Logo {
+  width: 20em;
+}
+
+.button {
+  padding: 1em;
+  margin-bottom: 10em;
+  border-style: none;
+  cursor: pointer;
+}
